@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import { BrowserRouter as Router, Link } from "react-router";
+// import { BrowserRouter as Router, a } from "react-router";
 
 
 export default function Navbar(props) {
@@ -29,14 +29,14 @@ export default function Navbar(props) {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <Link className="nav-link active" aria-current="page" to="/">
+                <a className="nav-link active" aria-current="page" href="/">
                   Home
-                </Link>
+                </a>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/about">
+                <a className="nav-link" href="/about">
                   {props.about}
-                </Link>
+                </a>
               </li>
             </ul>
             <div className="form-check form-switch">
